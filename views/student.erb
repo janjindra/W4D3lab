@@ -1,10 +1,14 @@
-<p>This is student view.</p>
+<h2>This is a list of all students enrolled to Hogwarts:</h2>
+
+
 
 
 <% for student in @students %>
-<p>First Name: <%=student.first_name%> </p>
+<div class="student">
+  <p>First Name: <%=student.first_name%> </p>
 <p>Last Name: <%=student.last_name%></p>
 <p>Age: <%=student.age%> </p>
 <p>House: <%=student.house%> </p>
+</div>
 <hr/>
 <% end %>

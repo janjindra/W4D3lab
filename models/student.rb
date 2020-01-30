@@ -14,9 +14,6 @@ class Student
     @house_id = options['house_id']
   end
 
-def id
-  return @id
-end
 
   def full_name
     return @first_name + " " + @last_name

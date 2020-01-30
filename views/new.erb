@@ -1,20 +1,25 @@
-<h1></h1>
-
+<h2>If you wish to get enrolled to Hogwarts, please fill out the form below.</h2>
+<h2>See you soon on campus!</h2>
+<br><br>
 <form action="/hogwarts" method="post">
 <label for="first-name">First Name</label>
 <input id="first-name" type="text" name="first_name">
-<label for="last-name">Last Name</label>
+<br><br><label for="last-name">Last Name</label>
 <input id="last-name" type="text" name="last_name">
-<select id="house_select" name="house">
 
+<br><br><label for="house_select">House</label>
+<select id="house_select" name="house">
   <% for house in @houses %>
 <option value=" <%=house.name%>"> <%=house.name%> </option>
 <% end %>
-
 </select>
-<label for="age">Age</label>
+
+<br><br><label for="age">Age</label>
 <input id="age" type="number" name="age">
 
-<input type="submit" value="Confirm">
+<br><br>
+<input id="submit-button" type="submit" value="Confirm">
+<br><br>
+<br><br>
 
 </form>
